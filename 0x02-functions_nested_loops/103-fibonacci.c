@@ -20,7 +20,7 @@ int main(void)
 		prev1 = prev2;
 		prev2 = nextTerm;
 		if ((nextTerm % 2 == 0) && (nextTerm < 4000000))
-			sum += sum;
+			sum += nextTerm;
 	}
 	printf("%ld\n", sum);
 	return (0);
