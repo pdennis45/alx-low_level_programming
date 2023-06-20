@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-	int i, prev1, prev2, nextTerm, n;
+	int i, n;
+	long prev1, prev2, nextTerm;
 	/** declare */
 	prev1 = 0;
 	prev2 = 1;
@@ -19,9 +20,9 @@ int main(void)
 		prev1 = prev2;
 		prev2 = nextTerm;
 		if (i < n)
-			printf("%d, ", nextTerm);
+			printf("%ld, ", nextTerm);
 		else
-			printf("%d\n", nextTerm);
+			printf("%ld\n", nextTerm);
 	}
 	return (0);
 }
