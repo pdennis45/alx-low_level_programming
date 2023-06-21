@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i, n;
-	unsigned long prev1, prev2, nextTerim;
+	unsigned long prev1, prev2, nextTerm;
 	/** Initializing here because of Betty... */
 	prev1 = 0;
 	prev2 = 1;
