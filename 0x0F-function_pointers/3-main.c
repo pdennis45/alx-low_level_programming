@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "3-calc.h"
+
+/**
+ * main - check the code
+ * @argv: array containing the program command line arguments
+ * @argc: size of argv array
+ * Return: Always 0.
+ */
+int main(int argc, char *argv[])
+{
+	int (*oprt)(int, int);
+
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	oprt = get_op_func(argv[2]);
+	if (oprt)
+	{
+		printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
+		return (0);
+	}
+	else
+	{
+		printf("Error\n");
+		exit(99);
+	}
+}
